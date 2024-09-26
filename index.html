@@ -13,39 +13,41 @@
             <h1>TK Photography</h1>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-                    <li>top</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#photos">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>    
             </nav>    
         </header>        
         
         <main>
-            <h2>About</h2>
-                <p>Hello!<br> 
-                I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p> 
-                
-                <h2>Gallery</h2>
-                <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+            <section id="about">
+                <h2>About</h2>
+                    <p>Hello!<br> 
+                    I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p> 
+                    
+                    <h2>Gallery</h2>
+                    <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+            </section>
 
+            <section id="photos">
                 <figure>
                     <img src="images/Chile.png" alt="chile">
                     <figcaption>Chile, 2001</figcaption>
                 </figure>
-               
+            
 
                 <figure>
                     <img src="images/Guatemala.png" alt="guatemala">
                     <figcaption>Guatemala, 1997</figcaption>
                 </figure>
-           
+        
 
                 <figure>
                     <img src="images/Hawaii.png" alt="hawaii">
                     <figcaption>Hawaii, 2010</figcaption>
                 </figure>
-               
+            
 
                 <figure>
                     <img src="images/Iran.png" alt="iran">
@@ -93,35 +95,38 @@
                     <img src="images/USA.png" alt="usa">
                     <figcaption>USA, 2021</figcaption>
                 </figure>
-                
+            
 
                 <figure>
                     <img src="images/Wyoming.png" alt="wyoming">
                     <figcaption>Wyoming, 2021</figcaption>
                 </figure>
-              
+            </section>
+        </main>
 
-
+            <section id="contact">
                 <h2>Contact</h2>
                 <p>Please fill out this form and I’ll connect with you soon.</p>
 
                 <h3>Your contact information</h3>
                 <form action="/action_page.php">
-                    <label for="name">NAME</label><br>
-                    <input type="text" id="name" name="name" value="YOUR FULL NAME"><br>
+                    <label for="name">name</label><br>
+                    <input type="text" id="name" name="name" value="Your full name"><br>
 
-                    <label for="email">EMAIL</label><br>
-                    <input type="text" id="email" name="email" value="ENTER YOUR EMAIL ADDRESS"><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" value="Enter your email address"><br>
 
-                    <label for="message">MESSAGE:</label><br>
-                    <input type="text" id="message" name="message" value="WHAT CAN I HELP YOU WITH?"><br>
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message" value="What can I help you with?"><br>
 
                     <input type="submit" value="Submit">
                 </form>  
-                
-                <footer>
-                    <small>Copyright 2021 TK Photography</small>
-                </footer>    
-        </main>
+            </section>
+
+            <footer>
+                <small>Copyright 2021 TK Photography</small>
+            </footer>    
+
+        
     </body>
 </html>

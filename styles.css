@@ -1,7 +1,155 @@
 /* ------------- IMPORTED FONTS --------------------------- */
+
 /*-------------- CSS RESET ---------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* ------------- ROOT VARIABLES --------------------------- */
+
+:root {
+	font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    --teele: #007d7b;
+    --black: #000000;
+    --white: #ffffff;
+}
 /* ------------- GLOBAL STYLES (mobile first/small) --------*/
+* {
+
+}
+
+body{
+    min-width: 485px; 
+    background-color: #000000;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #007d7b;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav a {
+    font-size: 1.5em;
+    color:#ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffffff;
+
+    
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+#photos {
+    text-align: center;
+}
+
+img {
+
+}
+
+#contact{
+	color:white;
+}
+
+
 /*-------------- MEDIA QUERY (medium) ----------------------*/
+@media screen and (min-width:880px) {
+
+    body {
+        min-width: 880px;
+    }
+
+    #photos {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
 /*-------------- MEDIA QUERY (large) -----------------------*/
-/*-------------- MEDIA QUERY (xl) --------------------------*/
+@media screen and (min-width:1300px) {
+    body {
+        min-width: 1300px;
+    }
+
+    header {
+        justify-content: right;
+    }
+
+    #photos {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
