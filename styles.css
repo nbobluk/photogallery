@@ -80,6 +80,7 @@ h1 {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem 0rem 3rem 0rem;
 }
 
 nav a {
@@ -89,10 +90,17 @@ nav a {
     text-decoration: none;
 }
 
+
+#myBtn{
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+	padding: 1rem 1.5rem;
+}
+
 main {
     background-color: #ffffff;
-
-    
+    padding: 1rem;
 }
 
 h2{
@@ -104,6 +112,10 @@ h2{
 
 p {
     font-size: 1.25em;
+}
+
+#about p{
+	padding: 1.5rem;
 }
 
 figcaption, label, input, small {
@@ -120,6 +132,41 @@ img {
 
 #contact{
 	color:white;
+    text-align:center
+}
+
+#contact h3 {
+    display: none;
+}
+
+#contact p {
+	padding-bottom: 2rem;
+}
+
+form {
+    text-transform:uppercase;
+}
+
+label {
+	
+}
+
+#name, #email, #message {
+	color: #007d7b;
+	text-transform: uppercase;
+    width: 500px;
+    padding: 0.5rem;
+}
+
+footer {
+	text-align: center;
+    padding-top:3rem;
+}
+
+small {
+	color:#ffffff;
+    text-transform: uppercase;
+    padding: 1rem;
 }
 
 
@@ -129,6 +176,13 @@ img {
     body {
         min-width: 880px;
     }
+
+    h1 {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		justify-content:left;
+        width: 115%;
+	}
 
     #photos {
 		display:grid;
