@@ -1,5 +1,3 @@
-/* ------------- IMPORTED FONTS --------------------------- */
-
 /*-------------- CSS RESET ---------------------------------*/
 
 html, body, div, span, applet, object, iframe,
@@ -55,6 +53,7 @@ table {
     --black: #000000;
     --white: #ffffff;
 }
+
 /* ------------- GLOBAL STYLES (mobile first/small) --------*/
 
 body{
@@ -137,6 +136,10 @@ figcaption, label, input, small {
     text-align: center;
 }
 
+#photos h2 {
+	display:none;
+}
+
 figcaption {
 	position:relative;
 	bottom: 80px;
@@ -146,16 +149,22 @@ figcaption {
     text-transform: uppercase;
 }
 
+.black {
+    color:#000000;
+}
+
 .top {
 	bottom: 300px;
 }
 
-.uptop {
-    bottom: 650px;
+.blacktop {
+    bottom: 300px;
+    color:#000000;
 }
 
-#black {
-	color:#000000;
+.blackuptop {
+    bottom: 650px;
+    color:#000000;
 }
 
 #contact{
@@ -211,6 +220,7 @@ small {
 }
 
 /*-------------- MEDIA QUERY (medium) ----------------------*/
+
 @media screen and (min-width:880px) {
 
     body {
@@ -231,6 +241,7 @@ small {
 }
 
 /*-------------- MEDIA QUERY (large) -----------------------*/
+
 @media screen and (min-width:1300px) {
     body {
         min-width: 1300px;
